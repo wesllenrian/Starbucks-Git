@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700;900&family=Oswald:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="circulo"> </div>
+
+    <img src="./img/logo.png" alt="logo-starbucks" class="logo">
+    <div class="conteudo">
+
+        <div class="caixa-texto">
+            <h2>Não é apenas café, é um <span>Starbucks</span></h2>
+            <p>Há 15 anos chegamos ao Brasil, compartilhando bons momentos junto com você. Essa história, escrita a cada
+                dia, vai além da xícara de café: ela celebra a conexão humana e nossa relação com cada pessoa que visita
+                nossas lojas. </p>
+          <a href="https://www.starbucks.com/menu/featured/?_branch_match_id=1262396782792792871&utm_source=Instagram&utm_campaign=fy24winter&utm_medium=marketing&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXLy5JLEoqTc4u1kssKNDLyczL1g%2FPzCtJLXJLLEstBgBFkylbJgAAAA%3D%3D" target="_blank">  <button>Peça Já o seu</button> </a>
+        </div>
+
+        <div class="caixa-imagem">
+            <img src="./img/img1.png" alt="copo-starbucks" class="copo-grande">
+        </div>
+    </div>
+    <div class="imagem-copos">
+        <img src="./img/img-pequena1.png" class="copo-verde"  onclick="trocaImagem('./img/img1.png');trocaCor('#017143') ">
+        <img src="./img/img-pequena2.png" class="copo-amarelo" onclick="trocaImagem('./img/img2.png');trocaCor('#eb7495')">
+        <img src="./img/img-pequena3.png" class="copo-rosa" onclick="trocaImagem('./img/img3.png');trocaCor('#d752b1')">
+    </div>
+</body>
+<script>
+    let imagem = document.querySelector(".copo-grande")
+    let circulo = document.querySelector(".circulo")
+    function trocaImagem(enderco){
+        imagem.src = enderco
+   
+    }
+    function trocaCor(cor){
+        circulo.style.background = cor
+
+    }
+
+    let imagem2 = document.querySelector(".copo-grande")
+    function trocaImagem(endereco){
+        imagem.src = endereco
+    }
+    
+    let imagem3 = document.querySelector(".copo-grande")
+    function trocaImagem(endereco1){
+        imagem.src = endereco1}
+</script>
+</html>
